@@ -8,7 +8,7 @@ gem 'spring', :group => :development
 
 gem 'pg'
 
-gem 'rspec'
+gem 'rspec-rails'
 
 
 
