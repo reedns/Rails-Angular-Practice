@@ -6,9 +6,9 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Group.create {[
+Group.create!([
   { name: 'Ruby Group' },
   { name: 'JavaScript Group' },
   { name: 'Java Group' },
   { name: 'Python Group' }
-  ]}
+])

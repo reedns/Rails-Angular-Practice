@@ -10,6 +10,8 @@ gem 'pg'
 
 gem 'rspec-rails'
 
+gem 'compass'
+
 
 
 # To use ActiveModel has_secure_password
