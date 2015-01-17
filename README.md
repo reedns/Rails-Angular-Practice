@@ -10,5 +10,7 @@ I chose to follow this tutorial is that it doesn't use the asset pipeline but ra
 demonstrates how to use proxy server locally so the Rails api communicates with Angular
 front end.
 
-To get up running locally simply run the rails sever and then cd into the front-end folder and run
-``bundle exec grunt serve`` for the front end server.
+To run locally just cd into front-end and enter ``bundle exec grunt serve``.  The grunt
+server is configured to also run a rails server concurrently.
+
+Next I will learn how to deploy this setup to Heroku.

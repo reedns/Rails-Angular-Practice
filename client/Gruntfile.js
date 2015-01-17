@@ -20,7 +20,7 @@ module.exports = function (grunt) {
   // Configurable paths for the application
   var appConfig = {
     app: require('./bower.json').appPath || 'app',
-    dist: 'dist'
+    dist: '/public'
   };
 
   // Define the configuration for all the tasks
@@ -402,7 +402,6 @@ module.exports = function (grunt) {
       ],
       dist: [
         'compass:dist',
-        'imagemin',
         'svgmin'
       ]
     },
@@ -451,18 +450,10 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'wiredep',
-    'useminPrepare',
     'concurrent:dist',
     'autoprefixer',
-    'concat',
-    'ngmin',
-    'copy:dist',
     'cdnify',
-    'cssmin',
-    'uglify',
-    'filerev',
-    'usemin',
-    'htmlmin'
+    'filerev'
   ]);
 
   grunt.registerTask('default', [
@@ -470,6 +461,8 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+
+  grunt.registerTask('heroku:production', 'build');
 
   grunt.loadNpmTasks('grunt-connect-proxy');
   grunt.loadNpmTasks('grunt-contrib-compass');
