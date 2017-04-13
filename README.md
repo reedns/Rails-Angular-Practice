@@ -1,6 +1,6 @@
-#README
+# README
 
-##Rails and Angular practice
+## Rails and Angular practice
 
 This is a sample app combining Rails and Angular. I followed this tutorial:
 http://www.angularonrails.com/ruby-on-rails-angularjs-single-page-application
